@@ -3,6 +3,7 @@ html{
 }
 .btn5 {
     transition: all .5s;
+    
 }
 .btn5 svg{
     position: fixed;
@@ -14,47 +15,160 @@ html{
     border: 1px solid #151c2e;
     background-color: #151c2e;
     border-radius: 30%;
+    z-index: 2550;
 }
 /**  start navbar **/
 
-.navbar{
+.home{
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
-    z-index: 2500;
+    z-index: 1050;
+ }
+ .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    padding-top: 15px;
+    transition: all 1s;
+   
+ }
+ .navbar .logo h1{
+    text-transform: uppercase;
+    color: #394B6C;
+    font-weight: 900;
+    font-size: 28px;
+    margin-left: -30px;
     
-    
-}
-.navbars .navbar svg{
-   width: 30px;
-    margin-bottom: 7px;
+ }
+ .navbar .logo span{
+    color: #4B6691;
+ }
+ .navbar .logo svg{
+    width: 28px;
     color: #FF5363;
+    margin:0 -8px 5px -8px ;
     animation-name: animee;
     animation-iteration-count: infinite;
     animation-duration: 4s;
     animation-timing-function: linear;
-}
-
-@keyframes animee{
+ }
+ 
+ @keyframes animee{
     0%{
         transform: rotate(360deg);
     }
    
-}
-
+ }
+ 
+ .navbar .open-icon{
+    display: none;
+    position: absolute;
+    right: 5%;
+    z-index: 3;
+ }
+ .navbar .close-icon{
+    display: none;
+    position: absolute;
+    right: 5%;
+    z-index: 3;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    padding: 10px;
+ }
+ .navbar .open-icon svg{
+    color: #50658e;  
+    width: 28px;
+ }
+ .navbar .close-icon svg{
+    color: #50658e;  
+    width: 20px;
+    
+ }
+ .hide{
+    display: none;
+    background-color: rgba(27, 71, 161, 0.8)  ;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+ }
+ .navbar .menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 100vh;
+    z-index: 2;
+    background-color: #fff;
+    padding: 50px;
+    display: none;
+ }
+ .navbar .menu ul{
+    list-style: none;
+ }
+ .navbar .menu ul li{
+    margin-top: 20px ;
+ }
+ .navbar .menu ul li a{
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #50658e;
+ }
+ .navbar nav ul{
+   
+    margin-right: -40px;
+    list-style: none;
+    
+ }
+ .navbar nav ul li{
+    list-style-type: none;
+     display: inline-block;
+     margin: 0 10px;
+ 
+ }
+ .navbar nav ul li a{
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 14px;
+    color: #50658e;
+ }
+ .navbar  ul li span a{
+    background-color: #2a81ea;
+    color: #fff !important; 
+    border-radius: 30px;
+    padding: 15px;
+ }
+ @media (max-width : 992px){
+    .navbar .open-icon{
+       display: block;
+    }
+    .navbar nav{
+       display: none;
+    }
+ 
+ }
 /** end navbar **/
 
 
 /** start header **/
+
 .headers{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap ;
+    
 }
 .headers img{
     width: 100%;
-
 }
 .headers .head{
     display: flex;
@@ -556,7 +670,6 @@ html{
     width: 100px;
 }
 .protect .imgs .middel{
-    
     justify-content: flex-start;
 }
 .protect .imgs .middel img{
@@ -575,41 +688,55 @@ html{
 
 /** start question **/
 
-.question .hed {
-   text-align: center;
-   
+.questions .head h4{
+    color: #2a81ea;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+    font-weight: bold;
 }
-.question .hed h3{
-    color: #3d4b69;
+.questions .head h2{
+    color: #50658e;
+    font-size: 42px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 25px;
 }
-.question .quesion-box .left ul li{
+.questions .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list-group a{
     display: flex;
     justify-content: space-between;
 }
-.question p{
-    color: red;
-}
-.question .left ul , .right ul{
-   list-style: none;
-  
-  
-}
-.question .left ul a{
-    text-decoration: none;
-}
-.question .left ul  li{
-    border: 1px solid #e7e8ff;
-    height: 62px;
-    
-    padding: 15px;
-    margin: 15px 0;
-
-}
-
-.question  svg{
+.list-group svg{
     width: 15px;
+}
+.list-group h5{
+    font-size: 15px;
+}
+.questions .left{
+    margin-bottom: 15px;
+}
+.questions .left a{
+    margin-bottom: 10px;
+    border: 1px solid #50658e
+}
+.questions .right svg{
+    width: 18px;
+    float: right;
+}
+.card button{
+    color: #465675;
+    font-weight: bold;
     
-    margin: 0px;
+}
+.card button:hover{
+    color: #00f;   
 }
 /** end question **/
 
