@@ -11,6 +11,10 @@ $(document).ready(function(){
     })
 })
 
+
+   
+
+
 $(window).scroll(function(){
     x = $(window).scrollTop();
     if(x > 550){
@@ -25,8 +29,8 @@ $(window).scroll(function(){
 
 new WOW().init();
 var scroll = new SmoothScroll('a[href*="#"]');
- /** $(function() {  
+  $(function() {  
     $("body").niceScroll({
         cursorcolor : "pink"
     });
-}); **/
+}); 

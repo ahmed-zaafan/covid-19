@@ -1,9 +1,16 @@
 html{
-    scroll-behavior: smooth;
+   
 }
 .btn5 {
     transition: all .5s;
     
+}
+.hidee{
+    display: none;
+   
+}
+.open{
+    display: block;
 }
 .btn5 svg{
     position: fixed;
@@ -103,7 +110,7 @@ html{
     position: fixed;
     top: 0;
     left: 0;
-    width: 350px;
+    width: 75%;
     height: 100vh;
     z-index: 2;
     background-color: #fff;
@@ -566,7 +573,7 @@ html{
 /** end prevention **/
 
 /** start tratment **/
-#tratment{
+#treatment{
     background-color: #2766aa;
     padding: 90px 0px;
     color: #fff;
@@ -582,6 +589,9 @@ html{
     font-size: 18px;
     letter-spacing: 0.1em;
     margin: 20px 0;
+}
+.tratment p{
+    color: #fff;
 }
 .tratment .left h2{
     font-size: 35px;
